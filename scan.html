@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scan-code.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="height:60px ;">
+		<div style="display: inline;" onclick="clicked('index.html')" id=""><img src="img/back.png" alt="返回" /></div>
+	    <h1 class="mui-title">扫一扫</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="main">
+	    	<!--code_in begin-->
+	        <div id="code_in">
+	        <a href="javascript:void(0);" class="startRecongize" onclick="clicked('code.html',true,true);" ><img src="img/code.png" alt="进场扫码" /></a>
+	        <button type="button" class="mui-btn mui-btn-blue mui-btn-block"  onclick="clicked('code.html',true,true);">进场扫码</button>
+	        </div>
+	        <!--code_in end-->
+	        <!--code_out begin -->
+	        <div id="code_out">
+	        	<a href="javascript:void(0);" class="startRecongize" onclick="clicked('code.html',true,true);"><img src="img/code_2.png" alt="出场扫码" /></a>
+	        	<button  type="button" class="mui-btn mui-btn-blue mui-btn-block"  onclick="clicked('code.html',true,true);">出场扫码</button>
+	        </div>
+	        <!--code_out end-->
+	       
+	    </div>
+	</div>
+	</body>
+
+</html>

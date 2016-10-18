@@ -1,0 +1,162 @@
+/*公共样式*/
+.main{
+    	background: rgb(238,243,246);
+    }
+    .mui-bar{
+    	background:rgb(50,147,250) ;
+    }
+    .mui-bar img{
+    	margin-top: 10px;
+    	width: 34px;
+    }
+    .mui-title{
+    	font-size: 20px;
+    	color: rgb(255,255,255);
+    	font-family: "黑体";
+    	padding-top: 15px;
+    }
+    	/*门卫端主界面index.html*/
+    	#code{
+    		width: 100%;
+    		margin-top: 100px;
+    		height: 150px;
+    		line-height: 150px;
+    		margin-bottom: 6px;
+    		background-color:white ;
+    		text-align: center;
+    		
+    	}
+    	#code img{
+    		width: 100px;
+    		vertical-align: middle;
+    	}
+    	#border{
+    		width: 100%;
+    		height: 150px;
+    		line-height: 150px;
+    		background-color:white ;
+    		text-align: center;
+    	}
+    	#border img{
+    		width: 100px;
+    		vertical-align: middle;
+    	}
+
+    	/*扫一扫实现界面 code.html*/
+		#barea{
+    	width: 100%;
+	    position: absolute;
+	    top: 0px;
+    	height: 100%;
+    
+    	}
+    	#setFlash{
+    		margin-top: 470px;
+    		z-index: 3;
+    	}
+    	#cancel img{
+    		margin-top: 4%;
+    		margin-left: 3%;
+    		width: 50px;
+    		
+    	}
+    	#flash img{
+    		margin-top: 4%;
+    		margin-left: 23%;
+    		margin-right:25%;
+    		width: 50px;	
+    	}
+    	#pic img{
+    		margin-top: 4%;
+    		width: 50px;
+    		background-color:#a0a1a2 ;	
+    		border-radius: 55px;
+    	}
+		/*进出场扫码scan.html*/
+		#code_in{
+			width: 100%;
+    		margin-top: 80px;
+    		height: 160px;
+    		margin-bottom: 60px;
+    		background-color:white ;
+    		text-align: center;
+    		
+		}
+		#code_in img{
+			width: 60px;
+			margin-top: 10px;
+		}
+		#code_in button{
+			width: 80%;
+			height: 40px;
+			margin: auto;
+			margin-top: 15px;
+			padding: 11px 0;
+			
+		}
+		#code_out{
+			width: 100%;
+    		height: 150px;
+    		
+    		background-color:white ;
+    		text-align: center;
+		}
+		#code_out img{
+			width: 60px;
+			margin-top: 10px;
+			
+    		
+		}
+		#code_out button{
+			width: 80%;
+			height: 40px;
+			margin: auto;
+			margin-top: 15px;
+			padding: 11px 0;
+			background-color: #e96849;
+			border: none;
+		}
+		#content{
+			margin-top: 20px;
+		}
+		/*订单页面样式*/
+		#order-main{
+			margin-top: 16px;
+		}
+		.orderBegin img{
+			width: 63px;
+			float: left;
+		}
+		.list-detail{
+			width: 70%;
+			float: left;
+			margin: 0 auto;
+		    position: relative;
+    		left: 6%;
+		}
+		.orderList{
+			
+		}
+		.order-in{
+			float: right;
+		}
+		.order-in img{
+			width: 20px;
+			height: 60px;
+		}
+		.mui-table-view{
+			margin-top: 10px;
+		}
+		.mui-table-view-cell{
+			
+			padding:0 ;
+		}
+		.mui-content-padded{
+			margin: 20px 0 10px 0 ;
+		}
+		.time{
+			color: #cbcbcb;
+		}
+		.address{
+			color: #cbcbcb;
+		}
