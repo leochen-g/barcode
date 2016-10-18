@@ -1,81 +1,85 @@
 {
-	"index.html": {
-		"resources": [
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"img/person.png",
-			"img/code.png",
-			"img/order.png",
-			"js/scan-code.js",
-			"css/main.css",
-			"code.html",
-			"scan.html",
-			"order.html"
-		],
-		"refer": [
-			"code.html",
-			"scan.html",
-			"test.html",
-			"order.html"
-		]
-	},
-	"code.html": {
-		"resources": [
-			"img/back.png",
-			"js/scan-code.js",
-			"css/main.css",
-			"js/mui.min.js",
-			"css/mui.min.css",
-			"index.html",
-			"scan.html",
-			"js/common.js",
-			"img/pic.png",
-			"img/flash.png",
-			"img/bac1.png"
-		],
-		"refer": [
-			"index.html",
-			"scan.html"
-		]
-	},
-	"scan.html": {
-		"resources": [
-			"img/code_2.png",
-			"js/scan-code.js",
-			"css/main.css",
-			"js/mui.min.js",
-			"css/mui.min.css",
-			"img/code.png",
-			"img/person.png",
-			"img/back.png",
-			"index.html",
-			"code.html",
-			"js/common.js",
-			"test.html"
-		],
-		"refer": [
-			"index.html",
-			"code.html",
-			"test.html"
-		]
-	},
-	"test.html": {
-		"resources": [
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"js/jquery-2.1.0.js"
-		]
-	},
-	"order.html": {
-		"resources": [
-			"img/back.png",
-			"img/orderBegin.png",
-			"img/choose.png",
-			"css/main.css",
-			"js/mui.min.js",
-			"css/mui.min.css",
-			"img/order_Finish.png"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/person.png",
+      "img/code.png",
+      "img/order.png",
+      "js/scan-code.js",
+      "css/main.css",
+      "code.html",
+      "scan.html",
+      "order.html"
+    ],
+    "refer": [
+      "code.html",
+      "scan.html",
+      "test.html",
+      "order.html"
+    ]
+  },
+  "code.html": {
+    "resources": [
+      "img/back.png",
+      "js/scan-code.js",
+      "css/main.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "index.html",
+      "scan.html",
+      "js/common.js",
+      "img/pic.png",
+      "img/flash.png",
+      "img/bac1.png"
+    ],
+    "refer": [
+      "index.html",
+      "scan.html"
+    ]
+  },
+  "scan.html": {
+    "resources": [
+      "img/code_2.png",
+      "js/scan-code.js",
+      "css/main.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/code.png",
+      "img/person.png",
+      "img/back.png",
+      "index.html",
+      "code.html",
+      "js/common.js",
+      "test.html"
+    ],
+    "refer": [
+      "index.html",
+      "code.html",
+      "test.html"
+    ]
+  },
+  "test.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/jquery-2.1.0.js"
+    ]
+  },
+  "order.html": {
+    "resources": [
+      "img/back.png",
+      "img/orderBegin.png",
+      "img/choose.png",
+      "css/main.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/order_Finish.png",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
 }

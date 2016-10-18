@@ -1,142 +1,223 @@
 <!doctype html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav" style="height:60px ;">
-		<div style="display: inline;" onclick="clicked('index.html')" id=""><img src="img/back.png" alt="返回" /></div>
-	    <h1 class="mui-title">门卫端</h1>
-	</header>
-	<div class="mui-content" id="order-main">
-	    <div id="wrap">
-		<div id="mui-table" class="mui-segmented-control">
-			<a class="mui-control-item mui-active" href="#orderBegin">进行中</a>
-			<a class="mui-control-item " href="#orderFinish">已完成</a>
-		</div>
-	</div>
-	<div class="mui-content-padded">
-		<div id="orderBegin" class="mui-control-content mui-active">
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/orderBegin.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
-						</div>
-					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
+			<a style="display: inline;" href="index.html" id=""><img src="img/back.png" alt="返回" /></a>
+			<h1 class="mui-title">门卫端</h1>
+		</header>
+
+		<div class="mui-content" id="order-main">
+			<!--选项卡导航开始-->
+			<div id="wrap">
+				<div id="mui-table" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#orderBegin">进行中</a>
+					<a class="mui-control-item " href="#orderFinish">已完成</a>
 				</div>
 			</div>
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/order_Finish.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
-						</div>
-					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
-				</div>
-			</div>
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/order_Finish.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
+			<!--选项卡导航结束-->
+			<!--订单详情开始-->
+			<div class="mui-content-padded">
+				<!--进行中订单start-->
+				<div id="orderBegin" class="mui-control-content mui-active">
+					<div class="mui-table-view" id="list_1">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/orderBegin.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
 						</div>
 					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
-				</div>
-			</div>
-		</div>
-		<div id="orderFinish" class="mui-control-content ">
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/orderBegin.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
+					<div class="mui-table-view" id="list_2">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
 						</div>
 					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
-				</div>
-			</div>
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/order_Finish.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
-						</div>
-					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
-				</div>
-			</div>
-			<div class="mui-table-view">
-				<div class="mui-table-view-cell">
-					
-					<div class="orderBegin" ><img src="img/order_Finish.png"/></div>
-					<div class="list-detail">
-						<div class="orderList" id="">
-						<span class="number">单号	</span> <span style="float: right;" >zxc1234567</span>				
-						</div>
-						<div class="orderList" id="">
-							<span class="time">创建时间</span> <span class="time" style="float: right;" >2016-5-5 13点13分</span>
-						</div>
-						<div class="orderList" id="">
-							<span class="address">地址</span> <span class="address" style="float: right;" >长宁路151号</span>
+					<div class="mui-table-view" id="list_3">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
 						</div>
 					</div>
-					<div class="order-in"><img src="img/choose.png"/></div>
+					<div class="mui-table-view" id="list_4">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+					<div class="mui-table-view" id="list_5">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
 				</div>
+				<!--进行中订单end-->
+				<!--已完成订单start-->
+				<div id="orderFinish" class="mui-control-content ">
+					<div class="mui-table-view" id="over_1">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+					<div class="mui-table-view" id="over_2">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/orderBegin.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+					<div class="mui-table-view" id="over_3">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+					<div class="mui-table-view" id="over_4">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+					<div class="mui-table-view" id="over_5">
+						<div class="mui-table-view-cell">
+
+							<div class="orderBegin"><img src="img/order_Finish.png" /></div>
+							<div class="list-detail">
+								<div class="orderList" id="">
+									<span class="number">单号	</span> <span style="float: right;">zxc1234567</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="time">创建时间</span> <span class="time" style="float: right;">2016-5-5 13点13分</span>
+								</div>
+								<div class="orderList" id="">
+									<span class="address">地址</span> <span class="address" style="float: right;">长宁路151号</span>
+								</div>
+							</div>
+							<div class="order-in"><img src="img/choose.png" /></div>
+						</div>
+					</div>
+
+				</div>
+				<!--已完成订单end-->
 			</div>
-		
-	</div>
-	</div>
-	
+
 	</body>
 
 </html>

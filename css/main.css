@@ -125,14 +125,15 @@
 		}
 		.orderBegin img{
 			width: 63px;
+			height: 65px;
 			float: left;
 		}
 		.list-detail{
 			width: 70%;
 			float: left;
-			margin: 0 auto;
 		    position: relative;
     		left: 6%;
+    		top:1px;
 		}
 		.orderList{
 			
@@ -143,6 +144,7 @@
 		.order-in img{
 			width: 20px;
 			height: 60px;
+			
 		}
 		.mui-table-view{
 			margin-top: 10px;
@@ -160,3 +162,20 @@
 		.address{
 			color: #cbcbcb;
 		}
+		/*选项卡头部样式重写*/
+		.mui-segmented-control{
+			font-size: 17px;
+			border: none;
+			border-radius: 0px;
+			
+		}
+		.mui-segmented-control .mui-control-item.mui-active{
+			color:#007aff ;
+			background-color: white;
+			border-bottom:2px solid #007aff  ;
+		}
+		.mui-segmented-control .mui-control-item{
+			border: none;
+			background-color: white;
+		}
+		
