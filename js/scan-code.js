@@ -92,8 +92,24 @@
 				text = "EAN8";
 				break;
 		}
-		alert("条码类型" + text + "\n条码内容" + result);
-		mui.back();
+		result = result.replace(/\n/g,'');
+		//分析扫描结果：是URL就跳转 ，不是就提示 
+        if(result.indexOf('http://')==0  || result.indexOf('https://')==0){ 
+            plus.nativeUI.confirm(result, function(i){ 
+                if(i.index == 0){ 
+                     
+                    back();//返回上一页 
+                    plus.runtime.openURL(result); 
+                }else{ 
+                    back();//返回上一页 
+                } 
+            }, '', ['打开', '取消']); 
+        } else{ 
+            back();//返回上一页 
+            plus.nativeUI.alert(result); 
+        } 
+		//alert("条码类型" + text + "\n条码内容" + result);
+		//mui.back();
 	}
 	// 从相册中选择二维码图片 
 	function scanPicture() {
